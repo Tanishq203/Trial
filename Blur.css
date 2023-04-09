@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color:black;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+    
+}
+
+.card{
+    overflow: hidden;
+    position: absolute;
+    height: 400px;
+    width: 270px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.card img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s; 
+    filter: blur(7px);
+    width: 100%;
+    
+}
+
+.card img:hover{
+    
+    width: 120%;
+    background-position: center;
+    filter: blur(0);
+    
+    
+    
+
+    
+}
+
+#left{
+    left: 25%;
+}
+
+#right{
+    left:75%;
+}
